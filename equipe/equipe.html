@@ -12,36 +12,85 @@
     </head> <!-- fim do cabeçalho do site -->
 
     <body>
-        
-        <h1>Página Equipe</h1>
-        
-        Link para a página: <a href="../index.html"><b>Index</b></a> <!-- link para voltar para a página inicial. Os simbolos ../ estão dizendo para coltar uma pasta, no diretório raiz -->
 
-        <br><br>
-
-        Link para a página: <a href="../direcionada.html"><b>Direcionada</b></a><!--Link Relativo/URL Relativa. Link que direciona o usuário para outra página dentro do mesmo site-->
-
-        <br><br>
+        <style>
+            * {
+                box-sizeing: border-box;
+                /* Faz com que o padding e a borda sejam incluídos na largura e altura total do elemento */
+            }
+    
+            body {
+                margin: 0;
+                /* remove a margem padrão do body */
+                padding: 0;
+                /* remove o padding padrão do body */
+                font-family: Arial, sans-serif;
+                /* define a fonte padrão do site */
+            }
+    
+            .header {
+                background-color: grey;
+                padding: 20px;
+                text-align: center;
+                /* centraliza o texto dentro do elemento */
+    
+            }
+    
+            .menu {
+                background-color: #333;
+                /* cor de fundo do menu */
+                overflow: hidden;
+                /* impede que o conteúdo transborde do elemento */
+            }
+    
+            .menu a {
+                float: left;
+                /* faz com que os links fiquem alinhados à esquerda */
+                display: block;
+                /* faz com que os links sejam exibidos como blocos */
+                color: white;
+                /* cor do texto dos links */
+                text-align: center;
+                /* centraliza o texto dentro do link */
+                padding: 14px 16px;
+                /* adiciona padding ao redor do texto do link */
+                text-decoration: none;
+                /* remove o sublinhado dos links */
+            }
             
-        Link para a página: <a href="../formulario.html"><b>Formulário</b></a>
+            .rodape {
+                background-color: #333;
+                /* cor de fundo do rodapé */
+                color: white;
+                /* cor do texto do rodapé */
+                text-align: center;
+                /* centraliza o texto dentro do rodapé */
+                padding: 10px;
+                /* adiciona padding ao redor do texto do rodapé */
+                position: fixed;
+                /* fixa o rodapé na parte inferior da página */
+                bottom: 0;
+                /* posiciona o rodapé na parte inferior da página */
+                width: 100%;
+                /* largura do rodapé */
+            }
+        </style>
+    
+        <header class="header"> <!-- cabeçalho do site -->
+            <h1>Página Equipe</h1>
+            <p>Pasta Equipe</p>
+        </header>
+    
+        <nav class="menu"> <!-- menu de navegação. Estava como <div> </div>. div = genêrico -->
+            <a href="../index.html">Index</a>            
+            <a href="../direcionada.html">Direcionada</a>
+            <a href="../formulario.html">Formulário</a>
+            <a href="../audio.html">Áudio</a>
+            <a href="../video.html">Vídeo</a>
+            <a href="../semantico.html">Semantico</a>
+        </nav>
 
-        <br><br>
-        
-        Link para a página: <a href="../audio.html"><b>Áudio</b></a>
-
-        <br><br>
-                
-        Link para a página: <a href="../video.html"><b>Vídeo</b></a>
-
-        <br><br>
-
-        Link para a página: <a href="../semantico.html"><b>Semântica</b></a>
-
-        <br><br>
-
-        <hr>
-
-        <br><br>
+        <br>
 
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi error id dolor ipsam libero, iusto, labore laudantium fugiat maiores numquam veritatis. Eligendi dolorum corrupti officiis dolor consequuntur explicabo at nulla.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi error id dolor ipsam libero, iusto, labore laudantium fugiat maiores numquam veritatis. Eligendi dolorum corrupti officiis dolor consequuntur explicabo at nulla.</p>
