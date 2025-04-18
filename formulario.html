@@ -1,0 +1,122 @@
+<!DOCTYPE html> <!-- declaração do tipo de documento -->
+<html lang="pt-br"> <!-- idioma do site -->
+
+    <head> <!-- cabeçalho do site -->
+        <meta charset="UTF-8"> <!-- codificação de caracteres -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- compatibilidade com o Internet Explorer (obsoleto)-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- responsivo -->
+        <meta name="description" content="Esse é o meu segundo site!"> <!-- descrição do site -->
+        <meta name="keywords" content="HTML, CSS, JavaScript"> <!-- palavras chaves sobre o site (obsoleto) -->
+        <meta name="author" content="Hugo Mendes"> <!-- autor do site -->
+        <link rel="stylesheet" href="style.css"> <!-- link para o arquivo CSS -->
+        <title>Página Formulário</title> <!-- título do site -->
+    </head> <!-- fim do cabeçalho do site -->
+
+    <body> <!-- corpo do site -->
+        <h1>Página Formulário</h1>
+        
+        Link para a página: <a href="index.html"><b>Index</b></a> <!-- link para voltar para a página inicial -->
+
+        <br><br>
+
+        Link para a pasta: <a href="equipe/equipe.html"><b>Equipe</b></a> <!--Link Relativo/URL Relativa. Link que direciona o usuário para outra página, porém, essa está em outra pasta-->
+
+        <br><br>
+
+        Link direcionado dentro do site: <a href="direcionada.html"><b>Direcionada</b></a> <!--Link Relativo/URL Relativa. Link que direciona o usuário para outra página dentro do mesmo site-->
+
+        <br><br>
+
+        Link para a página: <a href="audio.html"><b>Áudio</b></a>
+
+        <br><br>
+                        
+        Link para a página: <a href="video.html"><b>Vídeo</b></a>
+
+        <br><br>
+
+        Link para a página: <a href="semantico.html"><b>Semântica</b></a>
+
+        <br><br>
+
+        <hr>
+
+        <br><br>
+
+        <form> <!-- formulário -->
+
+            <label for="campo_nome">Nome:</label> <!-- rótulo do campo de entrada -->
+            <input id="campo_nome" type="text" placeholder="Digite o seu nome aqui" required> <!-- campo de entrada de texto. type="" define o tipo de formulário, placeholder="" define o texto na caixa, required obriga a preencher o campo-->
+
+            <br><br>
+
+            <label for="campo_email">E-mail:</label> <!-- rótulo do campo de entrada -->
+            <input id="campo_email" type="email" placeholder="Digite o seu E-mail aqui" required> <!-- campo de entrada de E-mail -->
+
+            <br><br>
+
+            <label for="campo_senha">Senha:</label> <!-- rótulo do campo de entrada -->
+            <input id="campo_senha" type="password" placeholder="Digite a sua senha aqui" required> <!-- campo de entrada de senha -->
+
+            <br><br>
+
+            <h3>Motivo do contato</h3>
+            
+            <input type="radio" id="compra" name="motivo" value="Compra"> <!-- botão de opção -->
+            <label for="compra">Compra</label> <!-- rótulo do campo de entrada -->
+            
+            <br><br>
+
+            <input type="radio" id="suporte" name="motivo" value="Suporte"> <!-- botão de opção -->
+            <label for="suporte">Suporte</label> <!-- rótulo do campo de entrada -->
+            
+            <br><br>
+
+            <input type="radio" id="duvida" name="motivo" value="Dúvida"> <!-- botão de opção -->
+            <label for="duvida">Dúvida</label> <!-- rótulo do campo de entrada -->
+            
+            <br><br>
+
+            <h3>Produto interessado</h3>
+
+                <input type="checkbox" id="hardware" name="hardware" value="Hardware"> <!-- caixa de seleção -->
+                <label for="hardware">Hardware</label> <!-- rótulo do campo de entrada -->
+
+                <br><br>
+
+                <input type="checkbox" id="software" name="software" value="Software"> <!-- caixa de seleção -->
+                <label for="software">Software</label> <!-- rótulo do campo de entrada -->
+
+                <br><br>
+
+                <input type="checkbox" id="cloud" name="cloud" value="Cloud"> <!-- caixa de seleção -->
+                <label for="cloud">Cloud</label> <!-- rótulo do campo de entrada -->
+
+            <br><br>
+
+            <h3>Escolha uma marca</h3>
+            <select name="marcas" required>
+                <option selected disabled value="">Selecione</option> <!-- opção de seleção -->
+                <option value="apple">Apple</option> <!-- opção de seleção -->
+                <option value="samsung">Samsung</option> <!-- opção de seleção -->
+                <option value="microsoft">Microsoft</option> <!-- opção de seleção -->
+                <option value="google">Google</option> <!-- opção de seleção -->
+                <option value="amazon">Amazon</option> <!-- opção de seleção -->
+            </select>
+
+            <br><br>
+
+            <h3>Mensagem</h3>
+
+            <textarea name="mensagem" rows="10" cols="30" placeholder="Digite a sua mensagem aqui"></textarea> <!-- campo de texto para mensagens. rows="" define o número de linhas, cols="" define o número de colunas -->
+            <br><br>
+
+            <input type="submit" value="Enviar Formulário"> <!-- botão de envio do formulário -->
+
+            <br><br>
+
+        </form> <!-- fim do formulário -->
+
+    </body> <!-- fim do corpo do site -->
+
+</html> <!-- fim do documento HTML -->
