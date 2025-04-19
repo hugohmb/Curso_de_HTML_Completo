@@ -90,14 +90,28 @@
         <a href="formulario.html">Formulário</a>
         <a href="audio.html">Áudio</a>
         <a href="video.html">Vídeo</a>
-        <a href="semantico.html">Semantico</a>
+        <a href="semantico.html">Semântica</a>
         <a href="https://www.google.com" target="_blank">Google</a>
     </nav>
 
     <br>
 
-    <p class="h1-style">Página Index</p>
+    <h2>🧱 Estruturas e Formatações Básicas do HTML</h2>
 
+
+    <p>O HTML, sigla para HyperText Markup Language, é a linguagem base usada para estruturar páginas da web. Ele funciona por meio de tags, que são comandos colocados entre sinais de menor e maior (< e >) para indicar ao navegador como exibir o conteúdo. Um arquivo HTML começa com uma estrutura básica composta pela declaração do tipo de documento (&lt;!DOCTYPE html&gt;) e pelas principais seções: &lt;html&gt;, &lt;head&gt; e &lt;body&gt;. A tag &lt;html&gt; envolve todo o código da página, enquanto o &lt;head&gt; contém informações que não aparecem diretamente para o usuário (como título da aba, charset, links para estilos ou scripts) e o &lt;body&gt; abriga todo o conteúdo visível.</p>
+
+    <p>Dentro do &lt;body&gt;, utilizamos várias tags para estruturar e formatar o conteúdo. Para títulos e parágrafos, usamos &lt;h1&gt; até &lt;h6&gt; (títulos em ordem de importância) e &lt;p&gt; para parágrafos. A tag &lt;br&gt; serve para quebras de linha, enquanto &lt;hr&gt; insere uma linha horizontal que pode ser usada como divisor visual. A formatação do texto também pode ser feita com tags como &lt;strong&gt; ou &lt;b&gt; (negrito), &lt;em&gt; ou &lt;i&gt; (itálico), &lt;u&gt; (sublinhado), &lt;mark&gt; (destaque), &lt;small&gt; (texto menor), além de &lt;sub&gt; e &lt;sup&gt; para textos subscritos e sobrescritos, como em fórmulas.</p>
+
+    <p>O HTML ainda oferece várias tags semânticas que ajudam a organizar o conteúdo e melhorar a acessibilidade. Por exemplo, &lt;header&gt;, &lt;nav&gt;, &lt;section&gt;, &lt;article&gt;, &lt;footer&gt; e &lt;main&gt; tornam a estrutura mais compreensível tanto para desenvolvedores quanto para mecanismos de busca. Outras tags como &lt;div&gt; e &lt;span&gt; são usadas para agrupar elementos e facilitar a aplicação de estilos, sendo que &lt;div&gt; age como um bloco e &lt;span&gt; como um elemento inline.</p>
+
+    <br>
+
+    <hr>
+
+    <br>
+
+    <h3>Exemplos de Formatação:</h3>
 
     <ol> <!-- lista ordenada -->
 
@@ -179,33 +193,18 @@
         </li>
 
     </ol> <!-- fim da lista ordenada -->
-
-    <hr>
-
-    Tag de imagem: <img src="img/matrix-5361690_1920-1-1.webp" width="200"
-        alt="Letras e numeros verdes, em colunas de uma unidade, e estão sobre um fundo preto">
-    <!-- tag de imagem. src = source (fonte) da imagem. width = largura da imagem. alt serve para a leitura em caso de acessibilidade -->
-
-    <hr> <!-- linha horizontal -->
-
-    <p> <!--paragrafo-->
-        Lorem ipsum dolor <u>sit</u> amet consectetur adipisicing elit. Expedita, beatae eos maxime ipsam eligendi in
-        provident eum!<br> <!-- quebra de linha -->
-        Dolor maxime qui, ipsum molestiae, sed <strong>perspiciatis</strong> libero consectetur, et doloremque iusto
-        eaque?<br> <!-- quebra de linha -->
-        Lorem ipsum <del>dolor</del> sit amet consectetur adipisicing elit. Expedita, beatae eos <i>maxime</i> ipsam
-        eligendi in provident eum!
-    </p> <!--fim do paragrafo-->
+    
+    <br>
 
     <p>O número 10<sup>4</sup> ao quadrado é 100. A fórmula da água é H<sub>2</sub>O.</p>
 
-    <p><b>Esse texto está</b>, <strong>esse outro está</strong>, <em>e esse aqui está</em>.</p>
+    <p><b>Esse texto está em negrito</b>, <strong>e esse outro está em "strong"</strong>, <em>já esse aqui está com enfase na fala</em>.</p>
 
     <p><small>Às vezes precisamos de um aviso em</small> para dar menos destaque.</p>
 
     <p><del>Algumas palavras foram</del> e <u>depois</u> para mostrar correções.</p>
 
-    <hr> <!-- linha horizontal -->
+    <br><br>
 
     <ul> <!-- lista não ordenada -->
         <li> <!-- item da lista -->
@@ -252,10 +251,19 @@
         </li> <!-- fim do item da lista -->
     </ul> <!-- fim da lista não ordenada -->
 
+    <br>
+
     <hr>
 
     <br> <!-- quebra de linha -->
 
+    <h2>🧱 Outras Formas de Estruturar um HTML</h2>
+
+    <br>
+
+    <h3>Tabela:</h3>
+
+    <br>
     <table width="100%" border="1" style="text-align: center;">
         <!--Inicio da Tabela. HTML aplicando formatação width="100%" border="1" e Css aplicando estilo style="text-align: center;"-->
         <tr> <!-- linha da tabela -->
@@ -269,29 +277,52 @@
             <td>77</td> <!-- célula da tabela -->
     </table> <!-- Fim da Tabela -->
 
-    <br> <!-- quebra de linha -->
+    <br><br> <!-- quebra de linha -->
 
-    <hr>
+    <h3>Iframe com borda:</h3>
 
     <br>
-
+    
     <iframe src="equipe/equipe.html" width="560" height="300" title="Meu Iframe"></iframe>
     <!-- Ela serve para inserir um site dentro de outro site. Ex: <iframe src="https://www.google.com"></iframe> -->
 
-    <br>
+    <br><br>
+
+    <h3>Iframe sem borda:</h3>
+
     <br>
 
     <iframe style="border:none;" src="equipe/equipe.html" width="560" height="300" title="Meu Iframe"></iframe>
     <!--Exemplo sem bordas por uso de CSS style="border:none;"-->
 
-    <br>
-    <br>
+    <br><br><br>
+
+    <h3>Mídias externas ou internas:</h3>
+
+
+    <h5>Tag de Vídeo:</h5>
+
 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/k9ynZnEBtvw?si=yuhrNoH2H2ku098h"
         title="YouTube video player" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     <!-- Exemplo de iframe com video do youtube. src="https://www.youtube.com/embed/k9ynZnEBtvw?si=yuhrNoH2H2ku098h" é o link do video. O restante são opções de configuração do video. -->
+
+    <br><br><br>
+
+ 
+    <h5>Tag de Imagem:</h5>
+    
+    
+    <img src="img/matrix-5361690_1920-1-1.webp" width="560"
+        alt="Letras e numeros verdes, em colunas de uma unidade, e estão sobre um fundo preto">
+    <!-- tag de imagem. src = source (fonte) da imagem. width = largura da imagem. alt serve para a leitura em caso de acessibilidade -->
+
+    <br><br> <!-- quebra de linha -->
+
+    Voltar ao topo: <a href="index.html"><b>Topo</b></a>
+
 
 </body> <!-- fim do corpo do site -->
 
