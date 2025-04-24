@@ -1,7 +1,7 @@
 🌐 Meu Projeto HTML – Curso Programação Web
 Este repositório reúne o projeto prático desenvolvido durante o curso "Introdução ao HTML", ministrado por Dimitri Teixeira no canal Programação Web.
 
-💡 Embora este não tenha sido o meu primeiro site, foi o primeiro curso completo que fiz focado exclusivamente em HTML — e é também o meu primeiro projeto publicado no GitHub!
+💡 Embora este não tenha sido o meu primeiro site, foi o primeiro curso completo que fiz focado exclusivamente em HTML!
 
 📚 Sobre o Curso
 Curso: Introdução ao HTML
